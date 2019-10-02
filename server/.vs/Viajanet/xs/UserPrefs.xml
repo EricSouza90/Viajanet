@@ -1,0 +1,43 @@
+﻿<Properties StartupConfiguration="{EAEEE6FC-4F86-4128-B4E7-6C06F678D875}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Api/ViajaNet.Api/Controllers/WeatherForecastController.cs">
+    <Files>
+      <File FileName="TrackingData/ViajaNet.TrackingData/Class1.cs" Line="1" Column="1" />
+      <File FileName="TrackingData/ViajaNet.TrackingData/Domain/Entities/TrackingData.cs" Line="10" Column="1" />
+      <File FileName="Api/ViajaNet.Api/Controllers/TrackingDataController.cs" Line="19" Column="34" />
+      <File FileName="Api/ViajaNet.Api/Startup.cs" Line="31" Column="9" />
+      <File FileName="Api/ViajaNet.Api/Controllers/WeatherForecastController.cs" Line="27" Column="28" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Viajanet" expanded="True">
+            <Node name="Api" expanded="True">
+              <Node name="ViajaNet.Api" expanded="True">
+                <Node name="Dependencies" expanded="True" />
+                <Node name="Controllers" expanded="True">
+                  <Node name="WeatherForecastController.cs" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+            <Node name="Background" expanded="True">
+              <Node name="ViajaNet.Background" expanded="True" />
+            </Node>
+            <Node name="TrakingData" expanded="True">
+              <Node name="Infrastructure" expanded="True" />
+              <Node name="ViajaNet.TrackingData" expanded="True">
+                <Node name="Domain" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Api.ViajaNet.Api PreferredExecutionTarget="/Applications/Safari.app" />
+</Properties>

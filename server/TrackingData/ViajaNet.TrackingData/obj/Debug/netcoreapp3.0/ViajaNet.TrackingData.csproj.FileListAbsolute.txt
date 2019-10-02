@@ -1,0 +1,7 @@
+/Users/ericsouza/Projects/Viajanet/server/TrackingData/ViajaNet.TrackingData/bin/Debug/netcoreapp3.0/ViajaNet.TrackingData.deps.json
+/Users/ericsouza/Projects/Viajanet/server/TrackingData/ViajaNet.TrackingData/bin/Debug/netcoreapp3.0/ViajaNet.TrackingData.dll
+/Users/ericsouza/Projects/Viajanet/server/TrackingData/ViajaNet.TrackingData/bin/Debug/netcoreapp3.0/ViajaNet.TrackingData.pdb
+/Users/ericsouza/Projects/Viajanet/server/TrackingData/ViajaNet.TrackingData/obj/Debug/netcoreapp3.0/ViajaNet.TrackingData.AssemblyInfoInputs.cache
+/Users/ericsouza/Projects/Viajanet/server/TrackingData/ViajaNet.TrackingData/obj/Debug/netcoreapp3.0/ViajaNet.TrackingData.AssemblyInfo.cs
+/Users/ericsouza/Projects/Viajanet/server/TrackingData/ViajaNet.TrackingData/obj/Debug/netcoreapp3.0/ViajaNet.TrackingData.dll
+/Users/ericsouza/Projects/Viajanet/server/TrackingData/ViajaNet.TrackingData/obj/Debug/netcoreapp3.0/ViajaNet.TrackingData.pdb

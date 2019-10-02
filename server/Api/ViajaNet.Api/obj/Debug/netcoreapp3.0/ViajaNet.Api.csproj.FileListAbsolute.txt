@@ -1,0 +1,6 @@
+/Users/ericsouza/Projects/Viajanet/server/Api/ViajaNet.Api/obj/Debug/netcoreapp3.0/ViajaNet.Api.csprojAssemblyReference.cache
+/Users/ericsouza/Projects/Viajanet/server/Api/ViajaNet.Api/obj/Debug/netcoreapp3.0/staticwebassets/ViajaNet.Api.StaticWebAssets.Manifest.cache
+/Users/ericsouza/Projects/Viajanet/server/Api/ViajaNet.Api/obj/Debug/netcoreapp3.0/staticwebassets/ViajaNet.Api.StaticWebAssets.xml
+/Users/ericsouza/Projects/Viajanet/server/Api/ViajaNet.Api/obj/Debug/netcoreapp3.0/ViajaNet.Api.MvcApplicationPartsAssemblyInfo.cache
+/Users/ericsouza/Projects/Viajanet/server/Api/ViajaNet.Api/obj/Debug/netcoreapp3.0/ViajaNet.Api.AssemblyInfoInputs.cache
+/Users/ericsouza/Projects/Viajanet/server/Api/ViajaNet.Api/obj/Debug/netcoreapp3.0/ViajaNet.Api.AssemblyInfo.cs

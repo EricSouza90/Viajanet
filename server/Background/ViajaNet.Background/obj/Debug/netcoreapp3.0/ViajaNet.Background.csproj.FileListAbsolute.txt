@@ -1,0 +1,8 @@
+/Users/ericsouza/Projects/Viajanet/server/Background/ViajaNet.Background/bin/Debug/netcoreapp3.0/ViajaNet.Background.deps.json
+/Users/ericsouza/Projects/Viajanet/server/Background/ViajaNet.Background/bin/Debug/netcoreapp3.0/ViajaNet.Background.dll
+/Users/ericsouza/Projects/Viajanet/server/Background/ViajaNet.Background/bin/Debug/netcoreapp3.0/ViajaNet.Background.pdb
+/Users/ericsouza/Projects/Viajanet/server/Background/ViajaNet.Background/obj/Debug/netcoreapp3.0/ViajaNet.Background.csprojAssemblyReference.cache
+/Users/ericsouza/Projects/Viajanet/server/Background/ViajaNet.Background/obj/Debug/netcoreapp3.0/ViajaNet.Background.AssemblyInfoInputs.cache
+/Users/ericsouza/Projects/Viajanet/server/Background/ViajaNet.Background/obj/Debug/netcoreapp3.0/ViajaNet.Background.AssemblyInfo.cs
+/Users/ericsouza/Projects/Viajanet/server/Background/ViajaNet.Background/obj/Debug/netcoreapp3.0/ViajaNet.Background.dll
+/Users/ericsouza/Projects/Viajanet/server/Background/ViajaNet.Background/obj/Debug/netcoreapp3.0/ViajaNet.Background.pdb
