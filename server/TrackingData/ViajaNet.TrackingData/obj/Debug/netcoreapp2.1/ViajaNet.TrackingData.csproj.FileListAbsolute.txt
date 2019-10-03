@@ -1,0 +1,8 @@
+D:\Eric\Test\Viajanet\server\TrackingData\ViajaNet.TrackingData\bin\Debug\netcoreapp2.1\ViajaNet.TrackingData.deps.json
+D:\Eric\Test\Viajanet\server\TrackingData\ViajaNet.TrackingData\bin\Debug\netcoreapp2.1\ViajaNet.TrackingData.dll
+D:\Eric\Test\Viajanet\server\TrackingData\ViajaNet.TrackingData\bin\Debug\netcoreapp2.1\ViajaNet.TrackingData.pdb
+D:\Eric\Test\Viajanet\server\TrackingData\ViajaNet.TrackingData\obj\Debug\netcoreapp2.1\ViajaNet.TrackingData.csprojAssemblyReference.cache
+D:\Eric\Test\Viajanet\server\TrackingData\ViajaNet.TrackingData\obj\Debug\netcoreapp2.1\ViajaNet.TrackingData.AssemblyInfoInputs.cache
+D:\Eric\Test\Viajanet\server\TrackingData\ViajaNet.TrackingData\obj\Debug\netcoreapp2.1\ViajaNet.TrackingData.AssemblyInfo.cs
+D:\Eric\Test\Viajanet\server\TrackingData\ViajaNet.TrackingData\obj\Debug\netcoreapp2.1\ViajaNet.TrackingData.dll
+D:\Eric\Test\Viajanet\server\TrackingData\ViajaNet.TrackingData\obj\Debug\netcoreapp2.1\ViajaNet.TrackingData.pdb

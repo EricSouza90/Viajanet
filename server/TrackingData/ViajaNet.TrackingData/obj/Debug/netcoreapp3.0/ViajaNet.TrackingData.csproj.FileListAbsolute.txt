@@ -5,3 +5,11 @@
 /Users/ericsouza/Projects/Viajanet/server/TrackingData/ViajaNet.TrackingData/obj/Debug/netcoreapp3.0/ViajaNet.TrackingData.AssemblyInfo.cs
 /Users/ericsouza/Projects/Viajanet/server/TrackingData/ViajaNet.TrackingData/obj/Debug/netcoreapp3.0/ViajaNet.TrackingData.dll
 /Users/ericsouza/Projects/Viajanet/server/TrackingData/ViajaNet.TrackingData/obj/Debug/netcoreapp3.0/ViajaNet.TrackingData.pdb
+D:\Eric\Test\Viajanet\server\TrackingData\ViajaNet.TrackingData\bin\Debug\netcoreapp3.0\ViajaNet.TrackingData.deps.json
+D:\Eric\Test\Viajanet\server\TrackingData\ViajaNet.TrackingData\bin\Debug\netcoreapp3.0\ViajaNet.TrackingData.dll
+D:\Eric\Test\Viajanet\server\TrackingData\ViajaNet.TrackingData\bin\Debug\netcoreapp3.0\ViajaNet.TrackingData.pdb
+D:\Eric\Test\Viajanet\server\TrackingData\ViajaNet.TrackingData\obj\Debug\netcoreapp3.0\ViajaNet.TrackingData.csprojAssemblyReference.cache
+D:\Eric\Test\Viajanet\server\TrackingData\ViajaNet.TrackingData\obj\Debug\netcoreapp3.0\ViajaNet.TrackingData.AssemblyInfoInputs.cache
+D:\Eric\Test\Viajanet\server\TrackingData\ViajaNet.TrackingData\obj\Debug\netcoreapp3.0\ViajaNet.TrackingData.AssemblyInfo.cs
+D:\Eric\Test\Viajanet\server\TrackingData\ViajaNet.TrackingData\obj\Debug\netcoreapp3.0\ViajaNet.TrackingData.dll
+D:\Eric\Test\Viajanet\server\TrackingData\ViajaNet.TrackingData\obj\Debug\netcoreapp3.0\ViajaNet.TrackingData.pdb
