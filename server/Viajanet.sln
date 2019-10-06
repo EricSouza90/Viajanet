@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ViajaNet.Background", "Back
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ViajaNet.TrackingData", "TrackingData\ViajaNet.TrackingData\ViajaNet.TrackingData.csproj", "{3172007C-4D60-47FE-98A5-70674EEC2D99}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViajaNet.Web.Api", "Api\ViajaNet.Api\ViajaNet.Web.Api\ViajaNet.Web.Api.csproj", "{F3502F18-1FAA-46E6-A573-CEFB085C6662}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ViajaNet.Web.Api", "Api\ViajaNet.Api\ViajaNet.Web.Api\ViajaNet.Web.Api.csproj", "{F3502F18-1FAA-46E6-A573-CEFB085C6662}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViajaNet.Tests", "TrackingData\ViajaNet.Tests\ViajaNet.Tests.csproj", "{E65C6D6B-DCB3-4AA6-844E-EE8D5D486642}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{F3502F18-1FAA-46E6-A573-CEFB085C6662}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F3502F18-1FAA-46E6-A573-CEFB085C6662}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F3502F18-1FAA-46E6-A573-CEFB085C6662}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E65C6D6B-DCB3-4AA6-844E-EE8D5D486642}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E65C6D6B-DCB3-4AA6-844E-EE8D5D486642}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E65C6D6B-DCB3-4AA6-844E-EE8D5D486642}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E65C6D6B-DCB3-4AA6-844E-EE8D5D486642}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -41,6 +47,7 @@ Global
 		{FC71BF66-D490-4F8D-AE00-40E3351936FA} = {1726F138-17FE-46B7-A722-327A10210958}
 		{3172007C-4D60-47FE-98A5-70674EEC2D99} = {D1F9543B-A9DE-4ED5-9BA2-017E4CBE4470}
 		{F3502F18-1FAA-46E6-A573-CEFB085C6662} = {AD8DC877-244A-4027-89BB-9D312AFFD3D6}
+		{E65C6D6B-DCB3-4AA6-844E-EE8D5D486642} = {D1F9543B-A9DE-4ED5-9BA2-017E4CBE4470}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AE5579AF-6333-4592-9A48-72BCB0692DEE}

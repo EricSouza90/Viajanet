@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using ViajaNet.TrackingData.Domain.Commands;
+using ViajaNet.Web.Api.ViewModel;
 
 namespace ViajaNet.Web.Api.Controllers
 {
@@ -25,9 +26,9 @@ namespace ViajaNet.Web.Api.Controllers
 
         // POST: api/DataTracking
         [HttpPost]
-        public void Post([FromBody] DataTrackingCreateCommand command)
+        public void Post([FromBody] DataTrackingViewModel data)
         {
-            _mediator.Publish(command);
+            _mediator.Send(new DataTrackingAddQueueCommand(data.Convert()));
         }
     }
 }

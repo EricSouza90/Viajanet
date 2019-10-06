@@ -1,6 +1,18 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using MediatR;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Quartz;
+using Quartz.Impl;
+using Quartz.Spi;
 using Swashbuckle.AspNetCore.Swagger;
 using System;
+using ViajaNet.Background.Jobs;
+using ViajaNet.TrackingData.Common;
+using ViajaNet.TrackingData.Domain.Repository;
+using ViajaNet.TrackingData.Infrastructure.Queue;
+using ViajaNet.TrackingData.Infrastructure.Queue.Helper;
+using ViajaNet.TrackingData.Infrastructure.Repository;
+using ViajaNet.Web.Api.HostedService;
 
 namespace ViajaNet.Web.Api.Services
 {
@@ -19,7 +31,6 @@ namespace ViajaNet.Web.Api.Services
 
             return services;
         }
-
         public static IServiceCollection ConfigureSwagger(this IServiceCollection services)
         {
             services.AddSwaggerGen(options =>
@@ -28,6 +39,34 @@ namespace ViajaNet.Web.Api.Services
                 options.DescribeAllEnumsAsStrings();
                 options.DescribeAllParametersInCamelCase();
             });
+
+            return services;
+        }
+        public static IServiceCollection AddMediator(this IServiceCollection services)
+        {
+            var assembly = AppDomain.CurrentDomain.Load("ViajaNet.TrackingData");
+            services.AddMediatR(assembly);
+            return services;
+        }
+        public static IServiceCollection ConfigureContainer(this IServiceCollection services, IConfiguration configuration)
+        {
+            services.Configure<RabbitMQConfiguration>(configuration.GetSection("RabbitMQConfiguration"));
+            services.AddScoped<IQueueRepository, QueueRepository>();
+            services.AddScoped<IQueue, RabbitMQHelper>();
+
+            return services;
+        }
+        public static IServiceCollection AddJobs(this IServiceCollection services, IConfiguration configuration)
+        {
+            var jobsConfig = configuration.GetSection("JobsConfig").Get<JobsConfig>();
+
+            services.AddSingleton<IJobFactory, SingletonJobFactory>();
+            services.AddSingleton<ISchedulerFactory, StdSchedulerFactory>();
+
+            services.AddSingleton<ProcessQueueMessageJob>();
+            services.AddSingleton(new JobSchedule(
+                jobType: typeof(ProcessQueueMessageJob),
+                cronExpression: jobsConfig.ProcessQueueMessageJobConfig.CronExpression));
 
             return services;
         }

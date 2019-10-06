@@ -30,6 +30,9 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
+              "D:\\Eric\\Test\\Viajanet\\server\\Background\\ViajaNet.Background\\ViajaNet.Background.csproj": {
+                "projectPath": "D:\\Eric\\Test\\Viajanet\\server\\Background\\ViajaNet.Background\\ViajaNet.Background.csproj"
+              },
               "D:\\Eric\\Test\\Viajanet\\server\\TrackingData\\ViajaNet.TrackingData\\ViajaNet.TrackingData.csproj": {
                 "projectPath": "D:\\Eric\\Test\\Viajanet\\server\\TrackingData\\ViajaNet.TrackingData\\ViajaNet.TrackingData.csproj"
               }
@@ -70,6 +73,10 @@
               "target": "Package",
               "version": "[2.1.9, )"
             },
+            "Quartz": {
+              "target": "Package",
+              "version": "[3.0.7, )"
+            },
             "Swashbuckle.AspNetCore.Swagger": {
               "target": "Package",
               "version": "[4.0.1, )"
@@ -81,6 +88,76 @@
             "Swashbuckle.AspNetCore.SwaggerUi": {
               "target": "Package",
               "version": "[4.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Eric\\Test\\Viajanet\\server\\Background\\ViajaNet.Background\\ViajaNet.Background.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Eric\\Test\\Viajanet\\server\\Background\\ViajaNet.Background\\ViajaNet.Background.csproj",
+        "projectName": "ViajaNet.Background",
+        "projectPath": "D:\\Eric\\Test\\Viajanet\\server\\Background\\ViajaNet.Background\\ViajaNet.Background.csproj",
+        "packagesPath": "C:\\Users\\Dlieve\\.nuget\\packages\\",
+        "outputPath": "D:\\Eric\\Test\\Viajanet\\server\\Background\\ViajaNet.Background\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Dlieve\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "D:\\Eric\\Test\\Viajanet\\server\\TrackingData\\ViajaNet.TrackingData\\ViajaNet.TrackingData.csproj": {
+                "projectPath": "D:\\Eric\\Test\\Viajanet\\server\\TrackingData\\ViajaNet.TrackingData\\ViajaNet.TrackingData.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "Quartz": {
+              "target": "Package",
+              "version": "[3.0.7, )"
             }
           },
           "imports": [
@@ -138,11 +215,23 @@
               "target": "Package",
               "version": "[7.0.0, )"
             },
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.1.0, )",
               "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.2, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[5.1.1, )"
             }
           },
           "imports": [

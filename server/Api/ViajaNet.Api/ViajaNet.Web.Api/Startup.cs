@@ -1,10 +1,9 @@
-﻿using MediatR;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using System;
+using ViajaNet.Web.Api.HostedService;
 using ViajaNet.Web.Api.Services;
 
 namespace ViajaNet.Web.Api
@@ -24,8 +23,11 @@ namespace ViajaNet.Web.Api
 #if DEBUG
             services.ConfigureCors();
 #endif
-            var assembly = AppDomain.CurrentDomain.Load("ViajaNet.TrackingData");
-            services.AddMediatR(assembly);
+            services.ConfigureContainer(Configuration);
+            services.AddMediator();
+            services.AddJobs(Configuration);
+            services.AddHostedService<QuartzHostedService>();
+            services.AddResponseCompression();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.ConfigureSwagger();
         }
@@ -37,19 +39,17 @@ namespace ViajaNet.Web.Api
             {
                 app.UseDeveloperExceptionPage();
             }
-
 #if DEBUG
             app.UseCors("CorsPolicy");
 #endif
-
+            app.UseResponseCompression();
             app.UseSwagger();
-
             app.UseSwaggerUI(sw =>
             {
                 sw.SwaggerEndpoint(Configuration["SwaggerEndpoint"], "API ViajaNet V1");
             });
             app.UseMvc();
-           
+
         }
     }
 }

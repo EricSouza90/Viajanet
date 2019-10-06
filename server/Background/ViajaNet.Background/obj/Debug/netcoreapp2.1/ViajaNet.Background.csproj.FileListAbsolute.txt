@@ -6,3 +6,6 @@ D:\Eric\Test\Viajanet\server\Background\ViajaNet.Background\obj\Debug\netcoreapp
 D:\Eric\Test\Viajanet\server\Background\ViajaNet.Background\obj\Debug\netcoreapp2.1\ViajaNet.Background.AssemblyInfo.cs
 D:\Eric\Test\Viajanet\server\Background\ViajaNet.Background\obj\Debug\netcoreapp2.1\ViajaNet.Background.dll
 D:\Eric\Test\Viajanet\server\Background\ViajaNet.Background\obj\Debug\netcoreapp2.1\ViajaNet.Background.pdb
+D:\Eric\Test\Viajanet\server\Background\ViajaNet.Background\bin\Debug\netcoreapp2.1\ViajaNet.TrackingData.dll
+D:\Eric\Test\Viajanet\server\Background\ViajaNet.Background\bin\Debug\netcoreapp2.1\ViajaNet.TrackingData.pdb
+D:\Eric\Test\Viajanet\server\Background\ViajaNet.Background\obj\Debug\netcoreapp2.1\ViajaNet.Background.csproj.CopyComplete

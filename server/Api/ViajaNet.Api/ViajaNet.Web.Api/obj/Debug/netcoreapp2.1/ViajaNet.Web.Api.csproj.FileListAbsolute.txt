@@ -17,3 +17,5 @@ D:\Eric\Test\Viajanet\server\Api\ViajaNet.Api\ViajaNet.Web.Api\obj\Debug\netcore
 D:\Eric\Test\Viajanet\server\Api\ViajaNet.Api\ViajaNet.Web.Api\bin\Debug\netcoreapp2.1\ViajaNet.TrackingData.dll
 D:\Eric\Test\Viajanet\server\Api\ViajaNet.Api\ViajaNet.Web.Api\bin\Debug\netcoreapp2.1\ViajaNet.TrackingData.pdb
 D:\Eric\Test\Viajanet\server\Api\ViajaNet.Api\ViajaNet.Web.Api\obj\Debug\netcoreapp2.1\ViajaNet.Web.Api.csproj.CopyComplete
+D:\Eric\Test\Viajanet\server\Api\ViajaNet.Api\ViajaNet.Web.Api\bin\Debug\netcoreapp2.1\ViajaNet.Background.dll
+D:\Eric\Test\Viajanet\server\Api\ViajaNet.Api\ViajaNet.Web.Api\bin\Debug\netcoreapp2.1\ViajaNet.Background.pdb
