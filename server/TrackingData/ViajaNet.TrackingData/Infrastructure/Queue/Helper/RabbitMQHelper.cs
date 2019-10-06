@@ -32,14 +32,22 @@ namespace ViajaNet.TrackingData.Infrastructure.Queue.Helper
 
             using (var channel = connection.CreateModel())
             {
-                CreateQueue(queueName, channel);
+                var queueDeclare = CreateQueue(queueName, channel);
+                var consumer = new QueueingBasicConsumer(channel);
 
-                var consumer = new EventingBasicConsumer(channel);
-                consumer.Received += (ch, ea) => { messageList.Add(Encoding.UTF8.GetString(ea.Body)); };
+                const bool autoAck = false;
+                channel.BasicConsume(queueName, autoAck, consumer);
 
-                channel.BasicConsume(queue: queueName,
-                     autoAck: true,
-                     consumer: consumer);
+                for (int i = 0; i < queueDeclare.MessageCount; i++)
+                {
+                    var dequeue = consumer.Queue.Dequeue();
+
+                    var body = dequeue.Body;
+                    var message = Encoding.UTF8.GetString(body);
+
+                    messageList.Add(message);
+                    channel.BasicAck(dequeue.DeliveryTag, false);
+                }
             }
 
             return messageList;

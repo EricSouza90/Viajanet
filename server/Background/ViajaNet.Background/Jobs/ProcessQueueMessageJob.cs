@@ -1,6 +1,5 @@
 ﻿using MediatR;
 using Quartz;
-using System;
 using System.Threading.Tasks;
 using ViajaNet.TrackingData.Domain.Commands;
 using ViajaNet.TrackingData.Domain.Queries;
@@ -19,10 +18,10 @@ namespace ViajaNet.Background.Jobs
 
         public async Task Execute(IJobExecutionContext context)
         {
-            await _mediator.Send(new DataTrackingAddQueueCommand(null));
             var messages = await _mediator.Send(new DataTrackingReadQueueQuery());
 
-            await _mediator.Publish(new DataTrackingCreateCommand(messages));
+            if (messages != null && messages.Count > 0)
+                await _mediator.Publish(new DataTrackingCreateCommand(messages));
         }
     }
 }

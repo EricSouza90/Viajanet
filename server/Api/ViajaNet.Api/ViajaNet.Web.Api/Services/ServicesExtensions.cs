@@ -61,9 +61,10 @@ namespace ViajaNet.Web.Api.Services
             var jobsConfig = configuration.GetSection("JobsConfig").Get<JobsConfig>();
 
             services.AddSingleton<IJobFactory, SingletonJobFactory>();
+            services.AddSingleton<QuartzJobRunner>();
             services.AddSingleton<ISchedulerFactory, StdSchedulerFactory>();
 
-            services.AddSingleton<ProcessQueueMessageJob>();
+            services.AddScoped<ProcessQueueMessageJob>();
             services.AddSingleton(new JobSchedule(
                 jobType: typeof(ProcessQueueMessageJob),
                 cronExpression: jobsConfig.ProcessQueueMessageJobConfig.CronExpression));

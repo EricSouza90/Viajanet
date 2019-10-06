@@ -1,5 +1,4 @@
-﻿using Microsoft.Extensions.Options;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using ViajaNet.TrackingData.Common;
 using ViajaNet.TrackingData.Domain.Repository;
 using ViajaNet.TrackingData.Infrastructure.Queue;
@@ -9,7 +8,7 @@ namespace ViajaNet.TrackingData.Infrastructure.Repository
     public class QueueRepository : IQueueRepository
     {
         private readonly IQueue _queue;
-       
+
         public QueueRepository(IQueue queue)
         {
             _queue = queue;

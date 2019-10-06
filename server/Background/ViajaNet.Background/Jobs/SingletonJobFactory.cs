@@ -13,11 +13,7 @@ namespace ViajaNet.Background.Jobs
             _serviceProvider = serviceProvider;
         }
 
-        public IJob NewJob(TriggerFiredBundle bundle, IScheduler scheduler)
-        {
-            return _serviceProvider.GetRequiredService(bundle.JobDetail.JobType) as IJob;
-        }
-
+        public IJob NewJob(TriggerFiredBundle bundle, IScheduler scheduler) => _serviceProvider.GetRequiredService<QuartzJobRunner>();
         public void ReturnJob(IJob job) { }
     }
 }
