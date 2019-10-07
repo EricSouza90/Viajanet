@@ -134,6 +134,14 @@
       "frameworks": {
         "netcoreapp2.1": {
           "dependencies": {
+            "Couchbase.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[2.0.2, )"
+            },
+            "CouchbaseNetClient": {
+              "target": "Package",
+              "version": "[2.7.12, )"
+            },
             "MediatR": {
               "target": "Package",
               "version": "[7.0.0, )"

@@ -102,3 +102,8 @@ D:\Eric\Test\Viajanet\server\TrackingData\ViajaNet.Tests\bin\Debug\netcoreapp3.0
 D:\Eric\Test\Viajanet\server\TrackingData\ViajaNet.Tests\bin\Debug\netcoreapp3.0\Castle.Core.dll
 D:\Eric\Test\Viajanet\server\TrackingData\ViajaNet.Tests\bin\Debug\netcoreapp3.0\Moq.dll
 D:\Eric\Test\Viajanet\server\TrackingData\ViajaNet.Tests\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Eric\Test\Viajanet\server\TrackingData\ViajaNet.Tests\bin\Debug\netcoreapp3.0\Couchbase.NetClient.dll
+D:\Eric\Test\Viajanet\server\TrackingData\ViajaNet.Tests\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.dll
+D:\Eric\Test\Viajanet\server\TrackingData\ViajaNet.Tests\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Logging.dll
+D:\Eric\Test\Viajanet\server\TrackingData\ViajaNet.Tests\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Eric\Test\Viajanet\server\TrackingData\ViajaNet.Tests\bin\Debug\netcoreapp3.0\OpenTracing.dll

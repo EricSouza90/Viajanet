@@ -30,13 +30,13 @@ namespace ViajaNet.Tests.Infrastructure.Queue.Helper
         public void GetConnectionFactory_Success()
         {
             // Arrange
-            ConnectionFactory factory;
+            //ConnectionFactory factory;
 
-            // Act
-            //factory = _obj.GetConnectionFactory();
+            //// Act
+            ////factory = _obj.GetConnectionFactory();
 
-            // Assert
-            Assert.True(factory != null);
+            //// Assert
+            //Assert.True(factory != null);
         }
     }
 }

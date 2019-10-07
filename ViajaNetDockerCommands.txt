@@ -1,3 +1,13 @@
 Containers
 
 docker run -d --hostname rabbit-local --name viajanet-rabbitmq -p 5672:5672 -p 15672:15672 -e RABBITMQ_DEFAULT_USER=viajanet -e RABBITMQ_DEFAULT_PASS=Viajanet2019! rabbitmq:3-management
+
+docker run -d --name db -p 8091-8094:8091-8094 -p 11210:11210 couchbase
+
+
+
+https://carlos.mendible.com/2017/04/10/step-by-step-couchbase-with-net-core/
+http://localhost:15672/#/queues
+http://localhost:8091/ui/index.html#!/buckets?openedBucket=ViajaNet
+https://github.com/couchbase-guides/asp-net-core-mvc/blob/master/starter_complete/aspnetcorestarter/Controllers/HomeController.cs
+https://github.com/search?l=C%23&q=viajanet&type=Repositories

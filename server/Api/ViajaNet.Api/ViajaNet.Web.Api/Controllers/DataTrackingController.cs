@@ -1,7 +1,8 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
+using System.Threading.Tasks;
 using ViajaNet.TrackingData.Domain.Commands;
+using ViajaNet.TrackingData.Domain.Queries;
 using ViajaNet.Web.Api.ViewModel;
 
 namespace ViajaNet.Web.Api.Controllers
@@ -18,17 +19,19 @@ namespace ViajaNet.Web.Api.Controllers
 
         // GET: api/DataTracking
         [HttpGet]
-        public IEnumerable<string> Get()
+        public async Task<IActionResult> Get([FromQuery] string ip, string pageName)
         {
-            //_mediator.Send()
-            return new string[] { "value1", "value2" };
+            return Ok(await _mediator.Send(new DataTrackingQuery(ip, pageName)));
         }
 
         // POST: api/DataTracking
         [HttpPost]
-        public void Post([FromBody] DataTrackingViewModel data)
+        public async Task<IActionResult> Post([FromBody] DataTrackingViewModel data)
         {
-            _mediator.Send(new DataTrackingAddQueueCommand(data.Convert()));
+            if (ModelState.IsValid)
+                return Ok(await _mediator.Send(new DataTrackingAddQueueCommand(data.Convert())));
+            else
+                return BadRequest();
         }
     }
 }

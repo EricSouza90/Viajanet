@@ -24,6 +24,7 @@ namespace ViajaNet.Web.Api
             services.ConfigureCors();
 #endif
             services.ConfigureContainer(Configuration);
+            services.ConfigureDB(Configuration);
             services.AddMediator();
             services.AddJobs(Configuration);
             services.AddHostedService<QuartzHostedService>();
