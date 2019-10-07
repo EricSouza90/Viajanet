@@ -3,10 +3,11 @@ namespace ViajaNet.TrackingData.Domain.Entities
 {
     public class DataTracking
     {
-        public string IP { get; private set; }
-        public string PageName { get; private set; }
-        public string Browser { get; private set; }
-        public string PageParameters { get; private set; }
+        public int Id { get; set; }
+        public string IP { get; set; }
+        public string PageName { get; set; }
+        public string Browser { get; set; }
+        public string PageParameters { get; set; }
 
         public DataTracking(string ip, string pageName, string browser, string pageParameters)
         {
@@ -15,5 +16,6 @@ namespace ViajaNet.TrackingData.Domain.Entities
             this.Browser = browser;
             this.PageParameters = pageParameters;
         }
+        public DataTracking() { }
     }
 }

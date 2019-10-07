@@ -1,5 +1,4 @@
 ﻿using MediatR;
-using System;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
@@ -28,7 +27,6 @@ namespace ViajaNet.TrackingData.Domain.Handlers
 
             return Task.CompletedTask;
         }
-
         public Task<IList<DataTracking>> Handle(DataTrackingQuery request, CancellationToken cancellationToken)
         {
             return Task.FromResult(_dataTrackingRepository.Get(request.IP, request.PageName));

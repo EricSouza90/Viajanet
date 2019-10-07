@@ -5009,7 +5009,9 @@
           "Couchbase.Extensions.DependencyInjection": "2.0.2",
           "CouchbaseNetClient": "2.7.12",
           "MediatR": "7.0.0",
-          "Microsoft.Extensions.Options": "2.1.1",
+          "Microsoft.EntityFrameworkCore": "2.1.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.1.0",
+          "Microsoft.Extensions.Options": "2.1.0",
           "Newtonsoft.Json": "12.0.2",
           "RabbitMQ.Client": "5.1.1"
         },

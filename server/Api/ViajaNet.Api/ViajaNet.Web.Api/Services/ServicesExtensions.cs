@@ -1,5 +1,6 @@
 ﻿using Couchbase.Extensions.DependencyInjection;
 using MediatR;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Quartz;
@@ -10,6 +11,7 @@ using System;
 using ViajaNet.Background.Jobs;
 using ViajaNet.TrackingData.Common;
 using ViajaNet.TrackingData.Domain.Repository;
+using ViajaNet.TrackingData.Infrastructure.Context;
 using ViajaNet.TrackingData.Infrastructure.Couchbase;
 using ViajaNet.TrackingData.Infrastructure.Queue;
 using ViajaNet.TrackingData.Infrastructure.Queue.Helper;
@@ -58,6 +60,11 @@ namespace ViajaNet.Web.Api.Services
             services.AddScoped<IQueue, RabbitMQHelper>();
             services.AddScoped<ICouchbaseConnection, CouchbaseConnection>();
             services.AddScoped<IDataTrackingRepository, DataTrackingRepository>();
+            services.AddScoped<IDataTrackingSQLRepository, DataTrackingSQLRepository>();
+            services.AddTransient<IUnitOfWork<ViajanetContext>, ViajanetContext>();
+
+            services.AddDbContextPool<ViajanetContext>(options => options.UseSqlServer(configuration
+                .GetConnectionString("DefaultConnection")));
 
             return services;
         }
@@ -74,11 +81,6 @@ namespace ViajaNet.Web.Api.Services
                 jobType: typeof(ProcessQueueMessageJob),
                 cronExpression: jobsConfig.ProcessQueueMessageJobConfig.CronExpression));
 
-            return services;
-        }
-        public static IServiceCollection ConfigureDB(this IServiceCollection services, IConfiguration configuration)
-        {
-            services.AddCouchbase(configuration.GetSection("CouchbaseConfig"));
             return services;
         }
     }
