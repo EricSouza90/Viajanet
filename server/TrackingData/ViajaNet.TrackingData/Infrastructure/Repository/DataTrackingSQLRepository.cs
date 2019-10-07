@@ -14,17 +14,8 @@ namespace ViajaNet.TrackingData.Infrastructure.Repository
 
         public void Save(DataTracking dataTracking)
         {
-            try
-            {
-                _dbSet.Add(dataTracking);
-                _context.Commit();
-            }
-            catch (System.Exception e)
-            {
-
-                throw;
-            }
-           
+            _dbSet.Add(dataTracking);
+            _context.Commit();
         }
     }
 }
