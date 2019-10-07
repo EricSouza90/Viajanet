@@ -17,6 +17,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ViajaNet.Web.Api", "Api\Via
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViajaNet.Tests", "TrackingData\ViajaNet.Tests\ViajaNet.Tests.csproj", "{E65C6D6B-DCB3-4AA6-844E-EE8D5D486642}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Front", "Front", "{D8239174-626F-40F3-B178-B7E62BC4C07B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Viajanet.Front", "..\src\Viajanet.Front\Viajanet.Front.csproj", "{10C68F09-AEFB-4CC4-A9E8-AF82CB069D10}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,10 @@ Global
 		{E65C6D6B-DCB3-4AA6-844E-EE8D5D486642}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E65C6D6B-DCB3-4AA6-844E-EE8D5D486642}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E65C6D6B-DCB3-4AA6-844E-EE8D5D486642}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10C68F09-AEFB-4CC4-A9E8-AF82CB069D10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10C68F09-AEFB-4CC4-A9E8-AF82CB069D10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10C68F09-AEFB-4CC4-A9E8-AF82CB069D10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10C68F09-AEFB-4CC4-A9E8-AF82CB069D10}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,6 +56,7 @@ Global
 		{3172007C-4D60-47FE-98A5-70674EEC2D99} = {D1F9543B-A9DE-4ED5-9BA2-017E4CBE4470}
 		{F3502F18-1FAA-46E6-A573-CEFB085C6662} = {AD8DC877-244A-4027-89BB-9D312AFFD3D6}
 		{E65C6D6B-DCB3-4AA6-844E-EE8D5D486642} = {D1F9543B-A9DE-4ED5-9BA2-017E4CBE4470}
+		{10C68F09-AEFB-4CC4-A9E8-AF82CB069D10} = {D8239174-626F-40F3-B178-B7E62BC4C07B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AE5579AF-6333-4592-9A48-72BCB0692DEE}
